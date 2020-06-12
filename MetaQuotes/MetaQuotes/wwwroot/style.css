@@ -1,0 +1,124 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #615d5d;
+    font-family: Roboto;
+    color: #424743;
+}
+
+.container {
+    display: inline-block;
+    width: 800px;
+    height: 100%;
+    font-size: 0;
+}
+
+.block {
+    font-size: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    height: 100%;
+}
+
+.left-block {
+    background-color: #deffef;
+    width: 25%;
+    float: left;
+    padding-top: 13px;
+}
+
+    .left-block div {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+.right-block {
+    background-color: #c9e8ff;
+    width: 75%;
+    float: right;
+    padding-top: 44px;
+}
+
+.block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+    .block ul li {
+        display: block;
+        padding: 5px 0px 5px 5px;
+        background-color: #7da185;
+        margin-bottom: 1px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+    }
+
+        .block ul li::after {
+            font-family: FontAwesome;
+            content: '';
+            position: relative;
+            right: 10px;
+            float: right;
+            font-size: 20px;
+        }
+
+        .block ul li.active::after {
+            font-family: FontAwesome;
+            content: '';
+            position: relative;
+            right: 10px;
+            float: right;
+            font-size: 20px;
+        }
+
+        .block ul li:hover {
+            background-color: #628069;
+        }
+
+        .block ul li.active {
+            background-color: #628069;
+        }
+
+.content {
+    display: none;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+    .content.active {
+        display: block;
+    }
+
+    .content form {
+        margin-top: 15px;
+    }
+
+        .content form input {
+            height: 20px;
+            width: 200px;
+        }
+
+        .content form button {
+            height: 25px;
+            border: none;
+            text-transform: uppercase;
+            background-color: #7da185;
+            color: white;
+            padding: 0px 8px 0px 8px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+            .content form button:hover {
+                background-color: #628069;
+            }

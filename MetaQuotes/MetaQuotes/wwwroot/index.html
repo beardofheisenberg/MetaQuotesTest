@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="js/root.js" type="text/javascript"></script>
+    <title>MetaQuotes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block left-block">
+            <div>Choose a service</div>
+            <ul>
+                <li class="active" data-related-content="search-by-ip">Search by IP</li>
+                <li data-related-content="search-by-city">Search by city</li>
+            </ul>
+        </div>
+        <div class="block right-block">
+            <div id="search-by-ip" class="content active">
+                <div>Search geo-information by IP-address</div>
+                <form action="/ip/location" data-param-name='ip'>
+                    <input placeholder="Enter a target IP-address" type="text" />
+                    <button>Search</button>
+                </form>
+            </div>
+            <div id="search-by-city" class="content">
+                <div>Search locations by a city name</div>
+                <form action="/city/locations" data-param-name='city'>
+                    <input placeholder="Enter a target city name" type="text" />
+                    <button>Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
